@@ -1,10 +1,19 @@
 package com.store.model;
 
-import org.springframework.data.annotation.Id;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.UUID;
-
+@Data
+@Table(name = "`user`")
+@Entity
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class User {
 
     @Id
@@ -14,6 +23,15 @@ public class User {
     private String address;
     private String phoneNumber;
 
+    @ManyToOne
+    @JoinColumn(name = "role_id")
     private Role role;
+
     private ArrayList<Order> orders;
+
+
+    @PrePersist
+    public void generateId(){
+        this.id = UUID.randomUUID();
+    }
 }
