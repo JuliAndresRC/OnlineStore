@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', serif;
+}
+
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../images/car-background.jpg) no-repeat center top fixed;
+    background-size: cover;
+    margin: 0 auto;
+    max-width: 1200px;
+    color: white;
+}
+
+.logo{
+    width: 100px;
+    border-radius: 50px;
+}
+
+.icon-cart{
+    width: 50px;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px 40px 0;
+}
+
+.container-icon button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Main */
+.container-items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    color: black;
+}
+
+.item{
+    border-radius: 10px;
+    background: white;
+}
+
+.item:hover{
+    box-shadow: 0 10px 20px rgb(255, 255, 255, 0.50);
+}
+
+.item img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.item figure{
+    overflow: hidden;
+}
+
+.item:hover img{
+    transform: scale(1.2);
+}
+
+.info-product{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price{
+    font-size: 18px;
+    font-weight: 750;
+}
+
+.info-product button{
+    border: none;
+    background-color: green;
+    color: white;
+    padding: 15px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.info-product button:hover{
+    background: lightgreen;
+    color: black;
+}
