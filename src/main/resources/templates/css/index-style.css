@@ -34,13 +34,6 @@ header{
     padding: 30px 0px 40px 0;
 }
 
-.container-icon button{
-    background-color: transparent;
-    border: none;
-    color: white;
-    cursor: pointer;
-}
-
 /* Main */
 .container-items{
     display: grid;
