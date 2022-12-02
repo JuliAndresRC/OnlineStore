@@ -44,8 +44,4 @@ public class UserServiceImpl implements UserService {
         return StreamSupport.stream(userRepository.findAll().spliterator(),false).collect(Collectors.toList());
     }
 
-    @Override
-    public void Admin(UUID userId) {
-        userRepository.setAdmin(userId);
-    }
 }

@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.UUID;
 
 @RequestMapping("/users")
-public interface UserAPI {
+public interface    UserAPI {
 
     @GetMapping("/{userId}")
     UserDTO getUser(@PathVariable UUID userId);

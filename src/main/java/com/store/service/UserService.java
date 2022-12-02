@@ -15,5 +15,4 @@ public interface UserService {
 
     public List<User> getUsers();
 
-    void Admin(UUID userId);
 }
