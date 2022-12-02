@@ -16,4 +16,6 @@ public interface ItemService {
     Item addItem(@RequestBody Item item);
 
     void modifyItem(@RequestBody UUID itemID, Item item);
+
+    void removeItem(@RequestBody UUID itemID);
 }

@@ -31,9 +31,6 @@ public class    User {
     @JoinColumn(name = "role_id")
     private Role role;
 
-    private ArrayList<Order> orders;
-
-
     @PrePersist
     public void generateId(){
         this.id = UUID.randomUUID();
