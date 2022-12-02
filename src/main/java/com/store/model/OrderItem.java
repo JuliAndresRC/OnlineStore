@@ -17,7 +17,7 @@ import java.util.UUID;
 public class OrderItem {
 
     @Id
-    @Type(type="org.hibernate.type.PostgresUUIDType")
+    @Type(type="org.hibernate.type.UUIDCharType")
     @Column(name = "order_item_id")
     private UUID id;
 
