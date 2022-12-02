@@ -1,17 +1,16 @@
 package com.store.DTO;
 
+import com.store.model.Role;
 import com.store.validation.CustomAnnotations;
 import com.store.validation.CustomAnnotations.NameValidation;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
-import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Data
@@ -42,6 +41,6 @@ public class UserDTO {
 
     private String address;
 
-    private RoleDTO role;
+    private Role role;
 
 }

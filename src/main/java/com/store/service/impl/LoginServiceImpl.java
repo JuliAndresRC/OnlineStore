@@ -33,7 +33,7 @@ public class LoginServiceImpl implements LoginService {
             claims.put("userId", user.getId().toString());
             return new TokenDTO(JWTParser.createJWT(user.getId().toString(), user.getEmail(), user.getEmail(), claims,100000L));
         }
-        throw new InvalidParameterException();
+        throw new InvalidParameterException()   ;
     }
 
 
