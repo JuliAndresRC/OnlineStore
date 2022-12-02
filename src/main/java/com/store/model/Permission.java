@@ -20,7 +20,7 @@ import java.util.UUID;
 public class Permission {
 
     @Id
-    @Type(type="org.hibernate.type.PostgresUUIDType")
+    @Type(type="org.hibernate.type.UUIDCharType")
     @Column(name = "permission_id")
     private UUID id;
 

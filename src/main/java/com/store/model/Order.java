@@ -20,7 +20,7 @@ public class Order {
 
 
     @Id
-    @Type(type="org.hibernate.type.PostgresUUIDType")
+    @Type(type="org.hibernate.type.UUIDCharType")
     @Column(name = "order_id")
     private UUID id;
 
@@ -28,8 +28,6 @@ public class Order {
 
     private String status;
 
-
-    private ArrayList<OrderItem> orderItems;
 
     @ManyToOne
     @JoinColumn(name = "user_id")

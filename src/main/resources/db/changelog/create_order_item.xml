@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.15.xsd">
+
+    <changeSet id="04" author="julian" failOnError="true">
+
+        <createTable tableName="order_items">
+            <column name="order_item_id" type="UUID">
+                <constraints nullable="false" primaryKey="true" />
+            </column>
+            <column name="quantity" type="number" />
+            <column name="item_id" type="UUID" />
+            <column name="order_id" type="UUID" />
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

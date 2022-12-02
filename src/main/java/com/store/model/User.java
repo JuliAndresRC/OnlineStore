@@ -19,7 +19,7 @@ import java.util.UUID;
 public class    User {
 
     @Id
-    @Type(type="org.hibernate.type.PostgresUUIDType")
+    @Type(type="org.hibernate.type.UUIDCharType")
     @Column(name = "user_id")
     private UUID id;
     private String email;
@@ -30,8 +30,6 @@ public class    User {
     @ManyToOne
     @JoinColumn(name = "role_id")
     private Role role;
-
-    private ArrayList<Order> orders;
 
 
     @PrePersist
