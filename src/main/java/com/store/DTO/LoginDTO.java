@@ -7,9 +7,9 @@ import javax.validation.constraints.Pattern;
 @Data
 public class LoginDTO {
 
-    @NotNull(message = "The email or phone number cannot be null.")
-    private String emailPhone;
+    @NotNull(message = "Por favor introducir el email")
+    private String email;
 
-    @NotNull(message = "Attribute 'password' cannot be null.")
+    @NotNull(message = "Por favor introducir el password")
     private String password;
 }

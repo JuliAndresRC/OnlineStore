@@ -11,12 +11,12 @@ import java.util.ArrayList;
 import java.util.UUID;
 
 @Data
-@Table(name = "users")
+@Table(name = "`user`")
 @Entity
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
+public class    User {
 
     @Id
     @Type(type="org.hibernate.type.PostgresUUIDType")
@@ -38,4 +38,5 @@ public class User {
     public void generateId(){
         this.id = UUID.randomUUID();
     }
+
 }

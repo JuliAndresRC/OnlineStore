@@ -13,7 +13,7 @@ public interface CustomAnnotations {
     @interface NameValidation {
 
 
-        String message() default "Name is invalid";
+        String message() default "El nombre es invalido";
 
         Class<?>[] groups() default {};
 
@@ -28,7 +28,7 @@ public interface CustomAnnotations {
     @interface EmailValidation {
 
 
-        String message() default "Name is invalid";
+        String message() default "El Email es invalido";
 
         Class<?>[] groups() default {};
 
@@ -36,4 +36,3 @@ public interface CustomAnnotations {
 
     }
 }
-
