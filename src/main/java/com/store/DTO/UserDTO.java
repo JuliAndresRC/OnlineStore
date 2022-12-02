@@ -29,16 +29,14 @@ public class UserDTO {
 
     @Size(min = 1, max = 120)
     @NameValidation
-    private String firstName;
-
-    @NotNull
-    @Size(min = 1, max = 120)
-    private String lastName;
+    private String name;
 
     @NotNull(message = "Por favor introducir la contraseña")
     @Pattern(regexp = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).+$", message = "La contraseña debe de contener caracteres alfanumericos")
     private String password;
 
     private String address;
+
+
 
 }
