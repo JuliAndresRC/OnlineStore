@@ -41,6 +41,4 @@ public class UserDTO {
 
     private String address;
 
-    private Role role;
-
 }

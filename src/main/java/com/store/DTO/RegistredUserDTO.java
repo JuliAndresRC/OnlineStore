@@ -1,14 +1,18 @@
 package com.store.DTO;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import com.store.model.Role;
+import lombok.NoArgsConstructor;
 
 import java.util.UUID;
 
 @Data
 @AllArgsConstructor
-public class RegistredUser {
+@NoArgsConstructor
+@Builder
+public class RegistredUserDTO {
 
     private UUID id;
 
