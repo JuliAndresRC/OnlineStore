@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public interface ViewControl {
 
     @GetMapping
-    public String indexStore(Model model);
+    public String login(Model model);
 
     @GetMapping("/cartshop")
     public String openCartShop(Model model);

@@ -10,8 +10,8 @@ import org.springframework.ui.Model;
 public class ViewController implements ViewControl {
 
     @Override
-    public String indexStore(Model model) {
-        return "index";
+    public String login(Model model) {
+        return "login";
     }
 
     @Override

@@ -9,5 +9,5 @@ import java.util.UUID;
 @Repository
 public interface UserRepository extends CrudRepository<User, UUID> {
 
-    void setAdmin(UUID userId);
+    //void setAdmin(UUID userId);
 }
