@@ -1,17 +1,21 @@
 package com.store.controller;
 
+import com.store.api.ViewControl;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.ui.Model;
 
 @Controller
-@RequestMapping("/store")
 @AllArgsConstructor
-public class ViewController {
+public class ViewController implements ViewControl {
 
-    @GetMapping
-    public String login(){
-        return " ";
+    @Override
+    public String indexStore(Model model) {
+        return "index";
+    }
+
+    @Override
+    public String openCartShop(Model model) {
+        return "cart-shop";
     }
 }
